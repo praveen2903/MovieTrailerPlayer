@@ -20,13 +20,9 @@ function App() {
 
     useEffect(() => {
         fetchMovies();
-        // if(localStorage.getItem("theme")? localStorage.getItem("theme"):"light"){
-        //   setSearchColor("text-black")
-        // }
-        // else{
-        //   setSearchColor("text-white")
-        // }
-    });
+      
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
 
     const fetchMovies = async (event) => {
         if (event) {
@@ -39,8 +35,6 @@ function App() {
                 query: searchKey
             }
         });
-
-        // console.log(data.results[0]);
         setMovies(data.results);
         setMovie(data.results[0]);
 
