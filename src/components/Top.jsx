@@ -21,7 +21,7 @@ function Top() {
   return (
     <div className="navbar bg-primary text-primary-content px-4">
         <div className="flex-1">
-            <h1 className="font-bold text-[#f3f4f6] text-3xl capitalize">MovieTrailerPlayer</h1>
+            <h1 className="font-bold text-[#f3f4f6] text-xl lg:text-3xl capitalize">MovieTrailerPlayer</h1>
         </div>
         <div className="flex-none">
         <label className="swap swap-rotate">
