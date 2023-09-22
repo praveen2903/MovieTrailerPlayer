@@ -26,7 +26,7 @@ function App() {
         // else{
         //   setSearchColor("text-white")
         // }
-    },[]);
+    });
 
     const fetchMovies = async (event) => {
         if (event) {
