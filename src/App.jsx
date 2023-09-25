@@ -3,6 +3,7 @@ import axios from 'axios';
 import Movie from "./components/Movie";
 import Youtube from 'react-youtube';
 import Top from "./components/Top";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
     const MOVIE_API = "https://api.themoviedb.org/3/";
@@ -78,6 +79,7 @@ function App() {
 
     return (
       <div className="items-center">
+        <ScrollToTop smooth color='#f97316' width='35' height='25' />
         <div className="max-w-[1680px] shadow-xl min-h-[400px] mx-auto p-3">
           <header className=" py-4">
             <div className="center-max-size">
